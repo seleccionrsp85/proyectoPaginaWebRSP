@@ -23,6 +23,9 @@ import { FaMinus, FaPlus } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 
 
+   /* Imagen del carrousel ala izquierda */
+ import watermark from '../assets/watermark.png'
+
 
 const Home = () => {
 
@@ -70,15 +73,28 @@ const Home = () => {
 
     {/*----------------------- Carrousel -----------------------*/}
 
-    <div className="relative w-full h-[600px]   xl:h-screen flex flex-col md:flex-row items-center justify-center bg-gray-100 border border-gray-600 shadow-lg rounded-lg overflow-hidden">
-  {/* Contenedor de texto a la izquierda */}
-  <div className="w-full md:w-1/2 h-1/2 md:h-full flex flex-col justify-center items-center p-4 md:pl-12 md:pr-2 max-h-64 overflow-hidden ">
-    <h2 className="text-lg md:text-2xl font-bold text-gray-800 mb-2 text-center">
+          {/* Contenedor padre */}
+         <div className="relative w-full h-[600px]   xl:h-screen flex flex-col md:flex-row items-center justify-center bg-gray-100 border border-gray-600 shadow-lg rounded-lg overflow-hidden">
+  {/* Contenedor de imagen  a la izquierda */}
+  <div className=" w-full md:w-1/2 h-1/2 md:h-full  bg-cover bg-center bg-no-repeat  flex flex-col justify-center items-center p-4 md:pl-12 md:pr-2  overflow-hidden  "
+  
+   style={{ backgroundImage: `url(${watermark})` }}
+  >
+
+      
+         {/* Contenedor de texto  a la izquierda */}
+    <div  className=" h-32 md:h-40  flex flex-col justify-center items-center ">
+       <h2 className="text-lg md:text-2xl font-bold text-gray-800 mb-2 text-center">
       {slides[current].text}
     </h2>
     <p className="text-base md:text-lg text-green-600 font-semibold mt-2 md:mt-4 text-center">
       {slides[current].highlight}
     </p>
+    </div>
+     
+
+  
+    
   </div>
 
   {/* Imagen a la derecha */}
@@ -119,6 +135,7 @@ const Home = () => {
     ))}
   </div>
 </div>
+
   
       
        {/* --------- Fin del carrousel -----------*/}
