@@ -188,7 +188,7 @@ const Nosotros = () => {
           <img src="https://www.svgrepo.com/show/213566/finances-pie-chart.svg" loading="lazy" width="200" height="200" className="w-14 h-14 rounded-full" style={{ color: "transparent" }} />
           <div className="space-y-2">
             <h5 className="text-xl font-semibold text-white transition group-hover:text-secondary">Ahorro de costos</h5>
-            <p className="text-gray-300">Reducimos hasta un 50% los gastos de contratación al evitar procesos fallidos.</p>
+            <p className="text-gray-300">Reducimos hasta un 50% los gastos de atracción al evitar procesos fallidos.</p>
           </div>
         </div>
       </div>
