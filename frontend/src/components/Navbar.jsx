@@ -4,6 +4,8 @@ import logo from "../assets/logo.jpg";
 import { navItems } from "../constants/info";
 import { Link } from "react-router-dom";
 
+import wspIcon from "../assets/wspicon.png"
+
 const Navbar = () => {
    const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
@@ -18,7 +20,21 @@ const Navbar = () => {
             <div className="flex items-center flex-shrink-0">
                 <img className="h-14 w-14 mr-2 rounded-sm" src={logo} alt="logo" />
                 <span className="max-[370px]:text-[11px] text-xs sm:text-sm md:text-base  lg:text-base   xl:text-lg tracking-tighter font-medium text-white  drop-shadow-lg">RSP (Reclutamiento y Selección de Personal)</span>
+           
+           
+               <div className="pl-5 hidden sm:block">
+                     <a href={`https://wa.me/573216143596?text=${encodeURIComponent('Hola, quisiera más información.')}`}
+                                       target="_blank"
+                                         rel="noopener noreferrer">
+                      <img src={wspIcon} className="w-9 h-9 transform rotate-[40deg]" />  
+                               
+                       </a>
+                  </div>
+
+           
             </div>
+
+
             <ul className="hidden lg:flex ml-3 xl:space-x-9 lg:space-x-5">
                 {navItems.map((item , index ) => (
                   <li key={index}>
