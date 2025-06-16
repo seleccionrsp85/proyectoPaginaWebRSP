@@ -30,9 +30,20 @@ const FooterRsp = () => {
                    <div className="pt-20  md:pt-14 pl-5 space-y-3">
                      <div className="flex items-center gap-3">
                         <div className="flex items-center justify-center w-11 h-11 bg-green-600 rounded-full">
-                        <Mail  stroke="gray" fill="white"/>
+                        
+						<a 
+  							href="https://mail.google.com/mail/?view=cm&fs=1&to=gerenciarsp@hotmail.com" 
+							target="_blank" 
+							rel="noopener noreferrer"
+							>
+								<Mail  stroke="gray" fill="white"/>
+
+							</a>
+
+
                         </div>
                      
+
                      <h1>
                       <span className="font-semibold"> Correo:</span> gerenciarsp@hotmail.com 
                       </h1> 
@@ -56,7 +67,15 @@ const FooterRsp = () => {
                        
 					 <div className="flex items-center gap-3">
                         <div className="flex items-center justify-center w-11 h-11 bg-green-600 rounded-full">
+						
+						<a 
+							href="https://www.google.com/maps/search/?api=1&query=Cl+56+Sur+%2336-11+Sabaneta" 
+							target="_blank" 
+							rel="noopener noreferrer"
+							>
 						<FaLocationDot  className="h-6 w-6" fill="white" />
+
+							</a>
 
                         </div>
                      
