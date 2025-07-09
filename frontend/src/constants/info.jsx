@@ -85,7 +85,7 @@ export const FAQS = [
   {
     question: "¿Ofrecen garantía en la contratación?",
     answer:
-      "Sí, ofrecemos una garantía en la contratación. Si el candidato seleccionado no se ajusta a los requerimientos dentro de un período determinado, realizamos un reemplazo sin costo adicional.",
+      "Sí, ofrecemos una garantía en la contratación. Si el candidato seleccionado no se ajusta a los requerimientos dentro de un período determinado, realizamos un reemplazo sin costo adicional. Aplican términos y condiciones.",
   },
   {
     question: "¿Pueden manejar procesos de selección masivos?",

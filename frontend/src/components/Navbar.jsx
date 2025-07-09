@@ -26,7 +26,7 @@ const Navbar = () => {
                      <a href={`https://wa.me/573216143596?text=${encodeURIComponent('Hola, quisiera más información.')}`}
                                        target="_blank"
                                          rel="noopener noreferrer">
-                      <img src={wspIcon} className="w-9 h-9 transform rotate-[45deg]" />  
+                      <img src={wspIcon} className="w-9 h-9 transform rotate-[10deg]" />  
                                
                        </a>
                   </div>
