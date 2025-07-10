@@ -38,7 +38,9 @@ const Navbar = () => {
             <ul className="hidden lg:flex ml-3 xl:space-x-9 lg:space-x-5">
                 {navItems.map((item , index ) => (
                   <li key={index}>
-                    <Link className="lg:text-sm  xl:text-base font-semibold text-white drop-shadow-lg  hover:text-yellow-200 transition-colors duration-300 " to={item.href} onClick={() => window.scrollTo(0, 0)}>{item.label}</Link>
+                    <Link className={`lg:text-sm  xl:text-base font-semibold drop-shadow-lg   transition-colors duration-300    hover:border-b-2 border-gray-200  pb-1
+                       ${ item.label === "Servicios" ? "text-yellow-200   hover:text-yellow-300 " : "text-white hover:text-purple-200 "}`}
+                       to={item.href} onClick={() => window.scrollTo(0, 0)}>{item.label}</Link> 
                   </li>
                 ))}
             </ul>
@@ -53,7 +55,7 @@ const Navbar = () => {
               <div className="fixed right-0 top-24 z-20 bg-gray-200 w-full p-12 flex flex-col justify-center items-center lg:hidden">
                  <ul>
                    {navItems.map((item, index) => (
-                     <li key={index} className="py-4 text-base hover:text-yellow-100   transition-colors duration-100">
+                     <li key={index} className={`py-4 text-base  transition-colors duration-100   ${ item.label === "Servicios" ? "text-blue-600 hover:text-blue-300  " : "text-black hover:text-yellow-100"} `}>
                        <Link to={item.href} onClick={() => {window.scrollTo(0, 0); toggleNavbar();}}>{item.label}</Link>
                      </li>
                    ))}
