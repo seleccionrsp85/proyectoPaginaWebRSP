@@ -1,4 +1,5 @@
-
+{/*Importamos motion para las animaciones de los testimonios 
+    de la libreria framer motion y icono de la libreria react icons */}
 import { motion } from "framer-motion";
 import { FaStar} from 'react-icons/fa';
  
@@ -12,6 +13,8 @@ import camiloPic from '../assets/profile-pictures/testimonio1.png'
  
  const Review = () => {
 
+    {/* Variable para calcular el ancho de la pantalla  si es menor <631 px no
+         muestra la animacion  */ }
     const { innerWidth: Width } = window; 
      
 
@@ -33,6 +36,10 @@ import camiloPic from '../assets/profile-pictures/testimonio1.png'
                     <div className="p-6 rounded shadow-md bg-blue-200 ">
                             <img src={camiloPic} alt="" className="w-20 h-20  mx-auto object-cover   rounded-full dark:bg-gray-500" />
             <div className="flex justify-center mt-4">
+        
+         {/* Se hace un array para multiplicar el icono de estrella a 5
+         estrellas en cada testimonial */}
+
              {[...Array(5)].map((_, index) => (
           <FaStar key={index} className="text-yellow-300 text-lg" />
            ))}
@@ -114,9 +121,17 @@ import camiloPic from '../assets/profile-pictures/testimonio1.png'
         </>
       ) : (
         <>
+
+        {/*Despues de estos parentesis
+        se activa la animacion en pantallas de >631 px de ancho */ }
         
         <div className="container px-6 py-12 mx-auto">
     <div className="grid items-center gap-4 xl:grid-cols-5">
+        
+        {/* usamos la libreria motion de framer motion
+        para darle la animacion a los testimoniales se debe poner
+        motion. al inicio y cierre de cada div */}
+        
         <motion.div    
           variants={{
             hidden: { opacity: 0 },

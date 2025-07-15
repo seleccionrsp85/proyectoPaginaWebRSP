@@ -1,4 +1,4 @@
-{/*  Barra de navegacion */ }
+{/* Texto Barra de navegacion */ }
 export const navItems = [
     { label: "Inicio", href: "/" },
     { label: "Servicios", href: "/serviciosRsp" },
@@ -14,6 +14,9 @@ import carrousel1 from "../assets/profile-pictures/slide1.jpg";
 import carrousel2 from "../assets/profile-pictures/slide2.jpg";
 import carrousel3 from "../assets/profile-pictures/slide3.jpg";
 import carrousel4 from "../assets/profile-pictures/slide4.jpg";
+
+
+ {/* texto del carrusel de inicio */}
 
 export const slides = [
   {
@@ -40,7 +43,7 @@ export const slides = [
 ];
 
 
-{/* Cards Category methods */}
+{/* imagenes de Cards Category methods de rsp   de la seccion de inicio */}
 
 import graphCtg1  from "../assets/profile-pictures/graphCtg1.jpg";
 import  graphCtg2  from "../assets/profile-pictures/graphCtg2.jpg";
@@ -48,7 +51,7 @@ import  graphCtg3  from "../assets/profile-pictures/graphCtg3.png";
 import graphCtg4 from "../assets/profile-pictures/graphCtg4.png";
 
 
-
+{/* Texto de las Cards Category methods  de la seccion de inicio */}
 
 export const categoryMethods  = [ 
   {id: 1, title: "ATS", desc: "Automatización y Selección con IA",  pic: graphCtg1 },
@@ -59,7 +62,7 @@ export const categoryMethods  = [
 
 
 
-{/* Seccion INFO de FAQS HOMEPAGE   */ }
+{/* Seccion Informacion de FAQS de la pagina de inicio   */ }
 
 export const FAQS = [
   {
@@ -103,6 +106,8 @@ export const FAQS = [
       "Puede contactarnos a través de nuestro sitio web, correo electrónico o teléfono. Uno de nuestros consultores se pondrá en contacto con usted para analizar sus necesidades y ofrecerle una solución personalizada.",
   },
 ];
+
+{/*  texto de la descripcion debajo de las preguntas mas frecuentes de inicio*/}
 
 export const FAQ_DESCRIPTION =
   "Explore respuestas rápidas a dudas o preguntas sobre RSP en nuestra sección de ayuda. Ya sea sobre nuestros servicios, políticas o más, encuentre la información que necesita. ¿Necesita más ayuda? ¡Comuníquese con nuestro servicio de atención al cliente para obtener asistencia personalizada!";

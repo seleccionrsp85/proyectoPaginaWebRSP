@@ -1,9 +1,16 @@
+{/*Importaciones de imagen en la porta de nosotros y un video 
+  vision y mision de RSP  */}
+
 import nosotrosHero from '../assets/nosotrosHero.png'
 import aboutVideo from "../assets/aboutusVideo.mp4";
+
+{/* Importacion de useref hook de react y motion de la libreria 
+  framer motion para animaciones y un icono de la libreria de iconos */}
 import { useRef } from "react";
 import {motion} from "framer-motion";
 import { TbTargetArrow } from "react-icons/tb";
 
+{/* Importamos las imagenes de la carpeta  fotosNosotros de assets*/}
 import angelPic from '../assets/fotosNosotros/angl.png'
 import yulyPic from '../assets/fotosNosotros/yl.png'
 import andresPic from '../assets/fotosNosotros/and.png'
@@ -14,10 +21,13 @@ import natalyPic from '../assets/fotosNosotros/nt.png'
 
 const Nosotros = () => {
 
+  {/* variable hook para funcionar el video */}
   const aboutVideoRef = useRef(null);
 
   return (
     <>
+
+    {/*Seccion de la portada de nosotros  */}
         <div>
       <div
         style={{ backgroundImage: `url(${nosotrosHero})` }}
@@ -39,6 +49,7 @@ const Nosotros = () => {
         </div>
       </div>
     </div>
+        {/* Fin de la seccion de nosotros la portada*/}
 
 
              {/* ------------ Seccion de nosotros con video -------------- */ }
@@ -160,7 +171,9 @@ const Nosotros = () => {
     </div>
     </div>
 
-      {/* ------------ SECCION DE OBJETIVOS --------------- */}
+     {/* ---- Fin de seccion de nosotros con video -----  */}
+
+      {/* ------------ SECCION DE  NUESTROS OBJETIVOS --------------- */}
 
       <div className="bg-gray-700 p-4 mt-40 xl:mt-56">
   <div aria-hidden="true" className="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-20">
@@ -213,6 +226,8 @@ const Nosotros = () => {
     </div>
   </div>
 </div>
+    {/*  Fin de la seccion de nuestros objetivos*/}
+  
 
 
      {/* ------------ Seccion de equipos  -------------- */}
@@ -267,7 +282,7 @@ const Nosotros = () => {
 		</div>
 	</div>
   </div>
-
+    {/* Fin de la seccion de nuestro equipo el organigrama*/}
 
     
 

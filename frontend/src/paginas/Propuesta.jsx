@@ -1,9 +1,11 @@
+{/* Importamos la imagen de la portada para esta seccion  */}
 import propuestaPic from  "../assets/propuestacomercial.jpg"
 
 const Propuesta = () => {
   return (
    <>
     
+	{/* Seccion de la portada de nuestro proceso de la propuesta comercial */}
     <div className="bg-gray-900 text-white">
 	<div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
 		<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
@@ -20,9 +22,10 @@ const Propuesta = () => {
 		</div>
 	</div>
 </div>
+   {/* fin de la seccion de la porta de nuestro proceso de la propuesta comercial */}
 
+    {/* seccion de paso a paso de nuestro proceso de la propuesta*/}
 
-    {/* seccion de paso a paso*/}
     <div className="bg-gray-100 text-gray-800  mt-52 mx-8 sm:mx-10 rounded-3xl">
 	<div className="container mx-auto  flex flex-col p-6 ">
 		<h2 className="py-4 text-3xl font-bold text-center mt-14">Próximos pasos</h2>

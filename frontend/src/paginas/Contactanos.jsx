@@ -3,6 +3,9 @@ import contacto from '../assets/contactus.jpg'
 const Contactanos = () => {
   return (
     <>
+
+    {/*Contenedor de contactanos con imagenes y el texto */ }
+    
      <div className="container mx-auto px-4 mt-10">
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
     

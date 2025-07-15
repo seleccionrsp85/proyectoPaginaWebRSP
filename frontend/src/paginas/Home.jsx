@@ -291,7 +291,7 @@ const Home = () => {
      
       <Review />
 
-
+    {/*Fin de la seccion de testimoniales */}
  
 
 
@@ -333,7 +333,7 @@ const Home = () => {
          </div>
       </div>
    </div>
-
+   {/*  fin de la seccion de faq*/}
     
 
         
@@ -342,6 +342,8 @@ const Home = () => {
 
 
         </div>
+
+        {/* fin del contenedor principal*/}
      </>
   );
 };

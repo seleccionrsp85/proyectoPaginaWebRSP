@@ -1,14 +1,20 @@
+ {/* importacion de la portada para servicios*/}
  import serviceHeroPic from '../assets/servicesHero.png'
+
+ {/*  importacion de los iconos  de los botones contacnos y nuestro proceso*/}
  import { FaHandshake } from "react-icons/fa";
  import { IoList } from "react-icons/io5";
+
+ {/* Importamos las imagenes que estan debajo del titulo porque elegirnos? */}
 import personalizacion from "../assets/personalizacionValor.png"
 import experiencia from "../assets/experienciaValor.png"
 import calidad from "../assets/calidadValor.jpg"
 import seguimiento from "../assets/seguimientoValor.png"
 
+{/* Importamos la libreria para hacer la navegacion a propuesta */}
 import { useNavigate } from 'react-router-dom';
 
-{/* precios imports */ }
+{/* texto de los precios imports */ }
  import { CheckCircle2 } from "lucide-react";
  import { pricingOptions } from "../constants/info";
 
@@ -20,6 +26,8 @@ import { useNavigate } from 'react-router-dom';
 
 const Servicios = () => {
 
+
+  {/* Funcion para navegar a la seccion de la propuesta */}
   const navigateCT = useNavigate();
 
   const propuestaClick = () => {
@@ -322,7 +330,9 @@ const Servicios = () => {
   </div>
 </div>
 
-     {/* -----------Seccion FAQ en Servicios RSP ----------------- */}
+{/* ------------Seccion FAQ en Servicios RSP al final------------------ */}
+
+  {/* PD:  no es el mismo  FAQ de la pagina inicio */}
 
      <div className="max-w-6xl mx-auto px-5 py-10 mt-36 ">
       {/* Título  */}

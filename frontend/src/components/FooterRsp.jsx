@@ -1,3 +1,4 @@
+ {/* Importaciones del logo de rsp al footer , iconos de las librerias react icons y lucide react  */}
 import logoRsp from "../assets/logo.jpg";
  import { Mail } from "lucide-react";
  import { BsWhatsapp } from "react-icons/bs";
@@ -8,11 +9,12 @@ import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 
-
+{/* Importacion de Link de la libreria react router
+ para manejar la navegacion de los recursos a otras secciones de la pagina*/}
 import { Link } from "react-router-dom";
 
 
-
+{/* Componente que contiene toda la maquetacion del pie de pagina */}
 
 const FooterRsp = () => {
   return (
@@ -20,12 +22,19 @@ const FooterRsp = () => {
 	<div className="container px-6 mx-auto space-y-6 divide-y divide-gray-400 md:space-y-12 divide-opacity-50">
 		<div className="grid grid-cols-12  space-y-10 md:space-y-0">
 			<div className="pb-6 col-span-full md:pb-0 md:col-span-6">
+			
+				{/* Usamos la libreria de react router que importamos para darle navegacion al logo de la parte izquierda del
+					footer ala seccion de nosotros */}
+
 				<Link to="/nosotros" onClick={() => window.scrollTo(0, 0)} className="flex justify-center space-x-3 md:justify-start">
 					<div className="flex items-center justify-center w-14 h-12 ">
 						<img src={logoRsp} alt="" className="  rounded-full border  border-green-200/40 shadow-2xl shadow-green-700" />
 					</div>
 					<span className="self-center text-2xl font-semibold">RSP | Selección de Personal</span>
 				</Link>
+
+                    {/* Seccion de iconos de la parte izquierda del pie de pagina con acciones 
+				hacia una ventana externa del navegador que abre gmail , whatsapp y el google maps */}
 
                    <div className="pt-20  md:pt-14 pl-5 space-y-3">
                      <div className="flex items-center gap-3">
@@ -87,6 +96,10 @@ const FooterRsp = () => {
 					  </div>
 			</div>
 		    	
+			{/* Seccion de recursos donde tambien utilizamos Link que importamos de react router para hacer
+			 la navegacion con "to" hacia las otras pestañas de la pagina como inicio, nosotros , servicios,
+			    contacto  y tambien hay una etiqueta <a> que dirige hacia un link con las redes sociales.*/}
+
 			<div className="col-span-6 text-center md:text-left md:col-span-3  md:pl-12  ">
 				<p className="pb-1 text-lg font-medium">Recursos</p>
 				<ul className="mt-1">
@@ -105,19 +118,24 @@ const FooterRsp = () => {
 					
 				</ul>
 			</div>
-			<div className="col-span-6 md:col-span-3  flex flex-col items-start">
-  <p className="pb-1 text-lg font-medium">Horarios</p>
-  <div className="flex items-center gap-2 mt-2">
-    <div className="w-11 h-11 bg-gray-200/60 rounded-full flex items-center justify-center">
-      <PiCalendarDots className="w-6 h-7" />
-    </div>
-    <span>7:30 AM - 6:00 PM</span>
-  </div>
-</div>
 
+			{/* Seccion del pie de pagina ala derecha donde aparece el horario */}
+
+			<div className="col-span-6 md:col-span-3  flex flex-col items-start">
+               <p className="pb-1 text-lg font-medium">Horarios</p>
+            <div className="flex items-center gap-2 mt-2">
+            <div className="w-11 h-11 bg-gray-200/60 rounded-full flex items-center justify-center">
+               <PiCalendarDots className="w-6 h-7" />
+            </div>
+              <span>7:30 AM - 6:00 PM</span>
+            </div>
+            </div>
 
 
 		</div>
+
+			{/* Ultima seccion del pie de pagina debajo de la linea  */}			
+
 		<div className="grid justify-center pt-6 lg:justify-between">
 			<div className="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
 				<span>©2025 Todos los derechos reservados</span>
@@ -128,6 +146,9 @@ const FooterRsp = () => {
 					<span>Terminos del Servicio</span>
 				</Link>
 			</div>
+
+			{/* Seccion de los iconos de las redes sociales con su funcion para dirigir hacia ellas*/}
+
 			<div className="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
 			  <a rel="noopener noreferrer" href="https://www.linkedin.com/in/rsp-reclutamiento-y-selecci%C3%B3n-de-personal-7970052a7/" title="LinkedIn" target="_blank" className="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-600 text-gray-50">
 				<FaLinkedinIn  className="h-5 w-5"/>
@@ -142,6 +163,7 @@ const FooterRsp = () => {
 				<IoLogoTiktok  className="h-5 w-5"/>
 				</a>
 			</div>
+
 		</div>
 	</div>
 </footer>

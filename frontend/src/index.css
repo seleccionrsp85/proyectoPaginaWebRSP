@@ -4,37 +4,41 @@
 @tailwind components;
 @tailwind utilities;
 
+/* agregamos la tipografia de la letra a toda la pagina */
 :root {
   font-family: "Poppins", sans-serif;
 }
 
+/* todo el color de  fondo de la pagina lo definimos aqui*/
 body {
   background-color:   rgb(22, 206, 164)
 }
 
-
+/* clase que se le agrega al titulo debajo del carrusel de inicio*/
 .titles {
   font-family:unset;
   color: black; 
   font-weight: 700; 
 }
 
-
+ /* clase que se le agrega a los titulos de la tarjetas de ats , reclutamiento directo
+ recomendaciones internas , headhunting */
 .cardTitle{
   font-family: 'Merriweather', serif;
 }
 
-
+/* clase para agregarle ala descripcion de las tarjetas de inicio tamaño y texto gris */
 .textCtgMtd {
   font-size: 15px;
   @apply text-gray-600;
 }
 
-
+/* Sombra que se agrega a la descripcion de nuestros planes en servicios */
 .text-shadowCT {
   text-shadow: 2px 2px 6px rgb(255, 255, 255,0.8);
 }
 
+/* clase para cuadrar el titulo del texto al lado del video de nosotros*/
 
 @layer utilities {
   .tlusMD {

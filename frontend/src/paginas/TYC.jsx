@@ -3,7 +3,7 @@
 const TYC = () => {
   return (
     <>
-    
+       {/* Contenedor de Terminos y Condiciones */}
        
        <div className="bg-gray-100 text-gray-900 mt-14  mx-3 xl:mx-5 rounded-3xl">
       <div className="container grid grid-cols-12 mx-auto">
